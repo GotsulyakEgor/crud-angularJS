@@ -1,0 +1,24 @@
+<div ng-app="myApp" class="user-list" ng-controller="UserListController as vm">
+    <a href="#/user-list/create" class="btn user-list__create-button">Create User</a>
+    <table class="user-list__table">
+        <thead class="user-list__thead">
+        <tr class="user-list__row user-list__row--header">
+            <th class="user-list__header">Username</th>
+            <th class="user-list__header">First Name</th>
+            <th class="user-list__header">Last Name</th>
+            <th class="user-list__header">Email</th>
+            <th class="user-list__header">Type</th>
+        </tr>
+        </thead>
+        <tbody class="user-list__tbody">
+        <tr class="user-list__row user-list__row--data" ng-repeat="user in vm.users"
+            ng-click="vm.navigateToEditUser(user.username)">
+            <td class="user-list__data">{{ user.username }}</td>
+            <td class="user-list__data">{{ user.firstName }}</td>
+            <td class="user-list__data">{{ user.lastName }}</td>
+            <td class="user-list__data">{{ user.email }}</td>
+            <td class="user-list__data">{{ user.type }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

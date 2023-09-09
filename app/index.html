@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AngularJS App</title>
+    <link rel="stylesheet" href="/app/assets/css/styles.css">
+</head>
+<body>
+<div ng-view></div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+<script src="/app/app.js"></script>
+<script src="/app/app.routes.js"></script>
+<script src="/app/components/user/user-service.js"></script>
+<script src="/app/components/user/notification.directive.js"></script>
+<script src="/app/components/user/user-list/user-list.controller.js"></script>
+<script src="/app/components/user/user-create/user-create.controller.js"></script>
+<script src="/app/components/user/user-edit/user-edit.controller.js"></script>
+</body>
+</html>
